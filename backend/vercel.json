@@ -3,20 +3,14 @@
     "builds": [
         {
             "src": "server.js",
-            "use": "@now/node",
-            "config": {}
+            "use": "@versel/node",
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server.js"
-        }
-    ],
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
+            "dest": "src/server.js"
         }
     ]
+   
 }
